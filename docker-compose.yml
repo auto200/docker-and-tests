@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  testing-app:
+    container_name: just-a-testing-app
+    build: ./
+    restart: on-failure
+    volumes:
+      - "./package.json:/usr/app/package.json"
+      - "./yarn.lock:/usr/app/yarn.lock"
+      - "./tsconfig.json:/usr/app/tsconfig.json"
+      - "./app.ts:/usr/app/app.ts"
+    environment:
+      CHOKIDAR_USEPOLLING: 1
+      CHOKIDAR_POLLINTERVAL: 3000

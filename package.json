@@ -12,10 +12,10 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.17.1",
-    "nodemon": "^2.0.12",
+    "@types/node": "^16.11.6",
+    "nodemon": "^2.0.14",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.3.5"
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   }
 }
