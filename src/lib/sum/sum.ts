@@ -1,3 +1,3 @@
-export const sum = (a: number, b: number) => {
-  return b + a;
+export const sum = (...numbers: number[]) => {
+  return numbers.reduce((acc, num) => acc + num, 0);
 };
